@@ -234,7 +234,7 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'Handling Custome Authentication Api',
     'VERSION': '0.2.0',
     'LICENCE': {'name': 'BSD License'},
-    'CONTACT': {'name': 'Elijah', 'email': 'elijahobara357@gmail.com'},
+    'CONTACT': {'name': 'elijah', 'email': 'elijahobara357@gmail.com'},
     #OAUTH2 SPEC
     'OAUTH2_FLOWS': [],
     'OAUTH2_AUTHORIZATION_URL': None,

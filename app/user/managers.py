@@ -56,3 +56,4 @@ class CustomUserManager(BaseUserManager):
             if roles is not None: user.roles.set(roles)
             create_token_and_send_user_email(user, token_type = TokenEnum.ACCOUNT_VERIFICATION)
             return user
+

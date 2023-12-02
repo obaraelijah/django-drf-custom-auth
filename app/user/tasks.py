@@ -19,3 +19,4 @@ def send_user_creation_email(email_data):
     send_email(
         "Email Confirmation", email_data["email"], html_alternative
     )
+
