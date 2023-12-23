@@ -231,7 +231,7 @@ SPECTACULAR_SETTINGS = {
     },
     'UPLOADED_FILES_USE_URL': True,
     'TITLE': 'Custom Authentication API',
-    'DESCRIPTION': 'Handling Custome Authentication Api',
+    'DESCRIPTION': 'Handling Custom Authentication Api',
     'VERSION': '0.2.0',
     'LICENCE': {'name': 'BSD License'},
     'CONTACT': {'name': 'elijah', 'email': 'elijahobara357@gmail.com'},
