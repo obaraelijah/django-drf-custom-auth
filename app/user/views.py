@@ -99,7 +99,7 @@ class AuthViewsets(viewsets.GenericViewSet):
                 name='AccountVerificationStatus',
                 fields={
                     "success": serializers.BooleanField(default=True),
-                    "message": serializers.CharField(default="Acount Verification Successful")
+                    "message": serializers.CharField(default="Account Verification Successful")
                 }
             ),
         },
@@ -111,7 +111,7 @@ class AuthViewsets(viewsets.GenericViewSet):
         url_path="verify-account",
     )
     def verify_account(self, request, pk=None):
-        """Activate a user acount using the verification token sent to the user"""
+        """Activate a user account using the verification token sent to the user"""
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         token: Token = Token.objects.filter(
@@ -120,7 +120,7 @@ class AuthViewsets(viewsets.GenericViewSet):
             return Response({'success': False, 'errors': 'Invalid token specified'}, status=400)
         token.verify_user()
         token.delete()
-        return Response({"success": True, "message": "Acount Verification Successful"}, status=200)
+        return Response({"success": True, "message": "Account Verification Successful"}, status=200)
 
 
 class PasswordChangeView(viewsets.GenericViewSet):
