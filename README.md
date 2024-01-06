@@ -1,8 +1,7 @@
 # Custom Authentication & Authorization in Django-DRF
 
-
 ## Tools & Services:
-- Django & DRF : for building the APIs
+- Django & DRF: for building the APIs
 - Docker & Docker compose: Containerization
 - Celery: For running background task
 - Rabbit MQ: A message broker for celery
@@ -11,7 +10,6 @@
 
 
 ## By the end of this tutorial 
-
 - Create an API that allows an admin to create roles and assign permissions into the role.
 - Create users and assign one or more roles to users.
 - Use these roles and permissions to protect API endpoints so that only users with the appropriate permissions can access them
